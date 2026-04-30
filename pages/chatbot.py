@@ -25,16 +25,22 @@ if question:
     - Working hours 9AM to 11PM
     - Opening days: Everyday
     - Menu:
-        pepperoni : small:180,
+        pizzas : pepperoni : small:180,
                     medium:200,
                     large:250,
-        chicken: small: 150,
+                 chicken: small: 150,
                     medium: 180,
                     large:200,
-        margerita: small:100,
+                 margerita: small:100,
                     medium:120,
                     large:160
-    
+        Pastas : Alfredo : 180,
+                 Bolognese : 200,
+                 Pesto : 190
+        Drinks : Cola : 30,
+                 Sprite : 30,
+                 Orange Juice : 45,
+                 Water : 15
     Do not answer any question irrelvant to food.
     '''
     
