@@ -1,6 +1,7 @@
 # 1. Importing Streamlit
 import streamlit as st
 import psycopg as pg
+import os
 
 # 2. Initializing session state variables
 if 'logged_in' not in st.session_state:
@@ -10,7 +11,7 @@ if 'name' not in st.session_state:
 if 'phone' not in st.session_state:
     st.session_state['phone'] = None
     
-connection_str = st.secrets["CONNECTION_STR"]
+connection_str = os.environ.get('CONNECTION_STR')
 conn = pg.connect(connection_str)
 cur = conn.cursor()
 
