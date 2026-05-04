@@ -1,12 +1,13 @@
 # 1. Importing extensions
 import streamlit as st
 import google.generativeai as ai
+import os
 
 # 2. Page title
 st.title('Chat with our AI Assitant✨')
 
 # 3. Gemini API setup
-key = st.secrets['API_KEY']
+key = os.environ.get('API_KEY')
 ai.configure(api_key=key)
 model = ai.GenerativeModel(model_name='gemini-3.1-flash-lite-preview')
 
